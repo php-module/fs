@@ -78,7 +78,7 @@ namespace Sammy\Packs\FileSystem {
      * @license MIT
      * @return FileSystem\File
      */
-    public final function __call ($methodName, $arguments) {
+    public function __call ($methodName, $arguments) {
       $args = array_slice ($arguments, 1, count ($arguments));
       $re = '/(.+)(file|dir(ectory)?)$/i';
 
